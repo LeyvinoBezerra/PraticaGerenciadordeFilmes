@@ -2,13 +2,13 @@ package com.example.pratica_db.pratica.Enteties;
 
 import java.util.HashSet;
 
-public class Filmes {
+public class Filme {
     private String nome;
     private Diretor diretor;
     private HashSet<Ator> elenco;
     private float nota;
 
-    public Filmes(String nome, Diretor diretor, HashSet<Ator> elenco, float nota) {
+    public Filme(String nome, Diretor diretor, HashSet<Ator> elenco, float nota) {
         this.nome = nome;
         this.diretor = diretor;
         this.elenco = elenco;

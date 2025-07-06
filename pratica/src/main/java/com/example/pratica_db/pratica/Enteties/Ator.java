@@ -8,7 +8,7 @@ public class Ator {
 
     private Strings nome;
 
-    public Ator(Strings nome) {
+    public Ator(String nome) {
         this.nome = nome;
     }
     public Ator(Ator ator) {
