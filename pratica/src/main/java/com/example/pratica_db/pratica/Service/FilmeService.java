@@ -14,7 +14,6 @@ import java.util.Iterator;
 import java.util.List;
 
 
-
 public class FilmeService {
 
     private FilmeRepository fr;
@@ -27,7 +26,8 @@ public class FilmeService {
         this.dr = new DiretorRepository();
     }
 
-    public boolean addFilme(String nome, String diretor,String[] elenco, float nota) {
+    public boolean addFilme(String nome, String diretor,
+                            String elenco[], float nota) {
 
         // Adicione diretor na lista de diretores
         this.addDiretor(diretor);
@@ -146,7 +146,7 @@ public class FilmeService {
         ArrayList<String> atores = new ArrayList<>();
 
         for(Ator a : atoresArray)
-            atores.add(a.getNome());
+            atores.add(String.valueOf(a.getNome()));
 
         return atores;
     }
@@ -154,7 +154,6 @@ public class FilmeService {
     public boolean addDiretor(String nome) {
         return this.dr.addDiretor(new Diretor(nome));
     }
-
 
     public ArrayList<String> listaDiretores(){
 
@@ -168,6 +167,3 @@ public class FilmeService {
         return diretores;
     }
 }
-
-
-

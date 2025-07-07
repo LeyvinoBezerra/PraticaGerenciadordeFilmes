@@ -15,6 +15,10 @@ public class Filme {
         this.nota = nota;
     }
 
+    public Filme(Filme f) {
+
+    }
+
     public String getNome() {
         return nome;
     }

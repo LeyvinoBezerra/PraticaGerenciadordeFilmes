@@ -7,7 +7,7 @@ import java.util.Objects;
 public class Diretor {
     private Strings nome;
 
-    public Diretor(Strings nome) {
+    public Diretor(String nome) {
         this.nome = nome;
     }
 
@@ -15,7 +15,7 @@ public class Diretor {
         this.nome = diretor.nome;
     }
 
-    public Strings getNome() {
+    public String getNome() {
         return nome;
     }
 
