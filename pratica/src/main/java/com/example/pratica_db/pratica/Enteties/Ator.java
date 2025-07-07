@@ -1,26 +1,26 @@
 package com.example.pratica_db.pratica.Enteties;
 
-import org.apache.logging.log4j.util.Strings;
 
 import java.util.Objects;
 
 public class Ator {
 
-    private Strings nome;
+    private String nome;
 
     public Ator(String nome) {
         this.nome = nome;
     }
-    public Ator(Ator ator) {
-        this.nome = ator.nome;
+
+    public Ator(Ator i) {
     }
 
-    public Strings getNome() {
+
+    public String getNome() {
         return nome;
     }
 
-    public void setNome(Strings nome) {
-        this.nome = nome;
+    public <Strings> void setNome(Strings nome) {
+        this.nome = String.valueOf(nome);
     }
 
     @Override

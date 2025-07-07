@@ -5,7 +5,7 @@ package com.example.pratica_db.pratica.Enteties;
 import java.util.Objects;
 
 public class Diretor {
-    private Strings nome;
+    private String nome;
 
     public Diretor(String nome) {
         this.nome = nome;
@@ -19,7 +19,7 @@ public class Diretor {
         return nome;
     }
 
-    public void setNome(Strings nome) {
+    public void setNome(String nome) {
         this.nome = nome;
     }
 
@@ -41,4 +41,5 @@ public class Diretor {
                 "nome=" + nome +
                 '}';
     }
+
 }
